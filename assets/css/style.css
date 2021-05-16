@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Work Sans', sans-serif;
+Color: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #2e2e2e;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+header nav a {
+    text-decoration: none;
+    color: #867772;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-right: 2%;
+}
+header nav a:hover {
+    border-bottom: 1px solid rgb(234, 204, 194);
+    color: rgb(234, 204, 194);
+    transition: 1s;
+}
+header nav a:nth-of-type(1) {
+   margin-left: 52%;
+   margin-right: 5%;
+}
+header nav a:nth-of-type(5) {
+    margin-left: 3%;
+}
+header nav img {
+    width: 30px;  
+    margin-left: 3%;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 10px;
+}
+header p {
+    font-size: 2.2rem;
+    color: #ebccc2;
+    line-height: 3rem;
+    width: 40%;
+    margin: 10% 0 10% 30%;
+}
+
+
+
+main figure img {
+    max-width: 85%;
+    margin-left: 7.5%;
+}
+
+
+main aside {
+    position: fixed;
+    top: 25%;
+    left: 3%;
+}
+main aside a {
+   text-decoration: none;
+   color: #867772;
+   font-size: 0.9rem;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+main aside a:hover {
+    color: #fff;
+    transition: 1s;
+}
+main aside a:nth-of-type(1) {
+    color: #fff;
+}
+main aside a::before {
+    content: "";
+    border: 1px solid transparent;
+    border-radius: 45px;
+    
+    content: "\25EF";
+    color: #867772;
+    padding: 2px;
+    margin-right: 30px;
+}
+main aside a:nth-of-type(1)::before {
+    content: "";
+    border: 2px solid #fff;
+    border-radius: 45px;
+    width: 20px;
+    height: 20px;
+
+    content: "\25EF";
+    color: #867772;
+    padding: 2px;
+    margin-right: 30px;
+}
+
+.line {
+    content: "";
+    height: 50px;
+    width: 1px;
+    background: #867772;
+    margin-left: 7%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+
+.lbreak {
+    display: block;
+}
+#design-1 {
+    display: flex;
+    margin: 7% 10% 10%;
+}
+#design-1 figure {
+    width: 90%;
+}
+#design-1 article {
+    width: 90%;
+    color: #ebccc2;
+    margin: 5%;
+}
+#design-1 article h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+#design-1 article p {
+    color: rgb(115, 115, 115);
+    margin-top: 5%;
+    line-height: 1.7rem;
+}
+#span-block {
+    padding-bottom: 5%;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #design-1 article {
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header nav a:nth-of-type(1) {
+       margin-left: 35%;
+    }
+    header p {
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+    }
+    #design-1 article h1 {
+        font-size: 1.8rem;
+    }
+    #design-1 {
+        margin: 7% 4% 10%;
+    }
+    #design-1 figure {
+        width: 100%;
+    }
+    #design-1 article {
+        width: 100%;
+        margin: 0;
+    }
+    #design-1 article p {
+        margin-top: 1%;
+        line-height: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    header nav a {
+        font-size: 0.5rem;
+    }
+    header nav a:nth-of-type(1) {
+        margin-left: 10%;
+     }
+     header p {
+         font-size: 1.2rem;
+         line-height: 2rem;
+         width: 70%;
+     }
+     #design-1 article h1 {
+         font-size: 1rem;
+         margin-left: 5%;
+     }
+     #design-1 {
+         margin: 7% 4% 10%;
+         display: flex;
+         flex-direction: column-reverse;
+     }
+     #design-1 figure {
+        width: 85%;
+    }
+     #design-1 article p {
+         margin-top: 1%;
+         font-size: 0.7rem;
+         line-height: 1rem;
+         width: 80%;
+         margin-left: 5%;
+         margin-bottom: 4%;
+     }
+    
+
+    main aside {
+        top: 15%;
+    }   
+    main aside a {
+        font-size: 0.5rem;
+        font-weight: 300;
+    }
+    main aside a::before {
+        margin-right: 10px;
+    }
+    main aside a:nth-of-type(1)::before {
+        margin-right: 10px;
+    }
+    .line {
+        height: 20px;
+        width: 1px;
+    }
+}
